@@ -1,0 +1,301 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #08090d;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background:
+        radial-gradient(circle at center, #252016 0%, #111117 40%, #08090d 80%);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.small-heading,
+.section-label {
+    color: #c9a45c;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(65px, 12vw, 120px);
+    color: #e5c47c;
+    letter-spacing: 12px;
+}
+
+.gold-line {
+    width: 100px;
+    height: 2px;
+    background: #c9a45c;
+    margin: 25px auto;
+}
+
+.hero h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(22px, 4vw, 36px);
+    font-weight: 400;
+    color: #f5e4bd;
+}
+
+.hero-description {
+    color: #bcb9b0;
+    margin: 25px 0;
+    line-height: 2;
+}
+
+.gold-button {
+    padding: 15px 35px;
+    background: #c9a45c;
+    color: #08090d;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.gold-button:hover {
+    background: #f0d79e;
+    transform: translateY(-4px);
+}
+
+.birthday-text {
+    margin-top: 50px;
+    font-size: 10px;
+    color: #8f897c;
+    letter-spacing: 4px;
+}
+
+.music-button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+    padding: 10px 18px;
+    background: #c9a45c;
+    color: #08090d;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 110px 10%;
+    text-align: center;
+    border-top: 1px solid #29251e;
+}
+
+.section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(25px, 4vw, 40px);
+    color: #e5c47c;
+    font-weight: 400;
+}
+
+.section-description,
+.personal-message {
+    max-width: 750px;
+    margin: 35px auto;
+    color: #bcb9b0;
+    font-size: 15px;
+    line-height: 2.2;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1050px;
+    margin: 50px auto 0;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border: 1px solid #80673b;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.04);
+    border-color: #e5c47c;
+}
+
+.message-section {
+    background: #101016;
+}
+
+.personal-message {
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+    color: #e0d4bb;
+}
+
+.final-section {
+    background: radial-gradient(circle, #252016, #08090d 75%);
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.final-section h1 {
+    font-family: 'Cinzel', serif;
+    color: #e5c47c;
+    font-size: clamp(30px, 6vw, 55px);
+}
+
+.gold-text {
+    color: #c9a45c;
+    margin: 30px 0;
+}
+
+.signature {
+    color: #e5c47c;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.footer-text {
+    color: #777;
+    font-size: 11px;
+    margin-top: 65px;
+}
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 75px 7%;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery img {
+        height: 350px;
+    }
+
+    .hero h1 {
+        letter-spacing: 5px;
+    }
+
+}
+
+/* Single childhood photo */
+
+.single-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.single-photo img {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* Spiritual section */
+
+.spiritual-section {
+    background: radial-gradient(
+        circle at center,
+        #1c1b25,
+        #08090d 80%
+    );
+}
+
+
+/* Final birthday section */
+
+.birthday-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1150px;
+    margin: 50px auto;
+}
+
+.birthday-content {
+    flex: 1.3;
+    text-align: center;
+}
+
+.birthday-content h1 {
+    font-family: 'Cinzel', serif;
+    color: #e5c47c;
+    font-size: clamp(30px, 4vw, 48px);
+}
+
+.birthday-content .section-description {
+    text-align: left;
+    line-height: 2.1;
+}
+
+.birthday-image {
+    flex: 0.8;
+}
+
+.birthday-image img {
+    width: 100%;
+    max-width: 380px;
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid #c9a45c;
+    border-radius: 8px;
+    box-shadow: 0 0 35px rgba(201, 164, 92, 0.2);
+}
+
+.birthday-content .gold-text {
+    font-family: 'Cinzel', serif;
+}
+
+
+/* Mobile responsive */
+
+@media (max-width: 750px) {
+
+    .birthday-layout {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .birthday-image img {
+        height: 400px;
+        max-width: 300px;
+    }
+
+    .birthday-content .section-description {
+        text-align: center;
+    }
+
+}
+
